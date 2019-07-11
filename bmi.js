@@ -16,3 +16,18 @@ if(yourBmi>25){
 }else{
   alert("Average");
 }
+const far=9/5;
+function temperature(degrees){
+  var temp=(degrees*far)+32;
+  return temp;
+}
+var degrees=parseInt(prompt("enter temperature"));
+alert(temperature(degrees) + "F");
+
+
+function farenheit(farens){
+  var fare=(farens-32)*far;
+  return fare;
+}
+var farens=parseInt(prompt("enter your temperature"));
+alert(farenheit(farens) + "c");
